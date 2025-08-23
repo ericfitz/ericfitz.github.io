@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What does a customer mean whey they say your software is "noisy"?</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.25em; }
+        p { margin-bottom: 15px; }
+        blockquote {
+            border-left: 4px solid #ddd;
+            margin: 0 0 15px 0;
+            padding-left: 15px;
+            color: #666;
+            font-style: italic;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 30px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1>What does a customer mean whey they say your software is "noisy"?</h1>
+<blockquote>Published on Aug 17, 2023</blockquote>
+<p>I have worked in/with security software since about 1996.  I have talked to hundreds or thousands of customers/users of security software over the years.  One of the things that I hear people say frequently about security software is that it's "noisy".   This observation is usually targeted at time series output like logs and so forth.</p>
+<p>After diving deep on a lot of these issues to understand what people meant by that, I've come up with a simple taxonomy describing what "noisy" means from the customer's point of view.  The purpose of this taxonomy is to help security (or other) software developers avoid or fix problems with their output in order to delight their customers, or at least not disappoint them.</p>
+<p>To spoil the surprise, "noisy" effectively inversely correlates with "actionable".</p>
+<p>Basically, when a customer says something is "noisy", they usually mean one of the following:</p>
+<ul><li>**Volume** - "There is way too much output; I'm overwhelmed by the volume"</li></ul>
+<ul><li>**Understandability** - "I don't understand this output, therefore it is not actionable by me"</li></ul>
+<ul><li>**Actionability** - "I understand the output, but it is not actionable by me"</li></ul>
+<ul><li>**Redundancy** - "I understand the output, and it is actionable, but it has a lot of redundancy and multiple outputs map to the same action by me"</li></ul>
+<ul><li>**Relevancy** - "I understand the output, and it may be actionable, but it is not relevant to me"</li></ul>
+<p>So some useful things to do to avoid and/or solve these kinds of issues are:</p>
+<ol><li>If there is too much output for one person, consider changing the output from time-series or interrupt-based (e.g. notifications), to periodic reports.</li></ol>
+<ol><li>Make your output clear and understandable to a layperson who doesn't write software, let alone your specific software.  Note that good reports require prioritization.</li></ol>
+<ol><li>Make sure that your output unambiguously points to a remediation action to be taken by a human.</li></ol>
+<ol><li>Try to aggregate your output such that there is a 1:1 mapping between the output and the action to be taken by the human.  For instance, if you have the same security vulnerability on all instances of a homogenous fleet, generate one output (for the fleet) that points to the "best" remediation action ("fix the image and redeploy"), rather than generate an output for each fleet member.</li></ol>
+<ol><li>Build your software so that the user only gets output that they care about - that means building a way for the user to tell you what the do (and don't) care about.  This might take the form of a policy UI for what kinds of output to generate, or might take the form of a simple way to suppress future instances of output they don't care about.</li></ol>
+<p>Note that busy people generally just want a list of "what do I need to do today and what should I do first?".  Any dashboarding or reporting solution that you build for your security information should keep that in mind.   The ideal is a prioritized list, with the most important thing at the top, and then other things in order of descending priority.</p>
+<p>Note that priority is not exactly the same thing as "severity".  A single change that eliminates 100 high severity risks might be more impactful than a single critical risk.  In human terms, "priority" combines concepts of severity, impact, and actionability.</p>
+<p>I hope this helps you build better software.  Lots of developers I've worked with have pushed back on these kinds of issues, not feeling that it is important.  However you often don't get a second chance to make a good impression, and if your software doesn't behave in accordance with user expectations they have a tendency to turn it off and/or ignore it.</p>
+<p>Eric</p>
+<ul><li>[ed] 2024-01-29 to add more information on prioritization</li></ul>
+<ul><li>[ed] 2024-07-16 added taxonomic labels</li></ul>
+</body>
+</html>
