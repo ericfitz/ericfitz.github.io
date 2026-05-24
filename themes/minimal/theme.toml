@@ -1,0 +1,9 @@
+name = "minimal"
+license = "MIT"
+licenselink = "https://github.com/ericfitz/ericfitz.github.io/blob/main/LICENSE"
+description = "A minimal, dependency-free theme for the efitz blog."
+homepage = "https://blog.efitz.net/"
+min_version = "0.116.0"
+
+[author]
+  name = "Eric Fitzgerald"

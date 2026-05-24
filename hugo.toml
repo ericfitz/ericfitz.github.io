@@ -1,0 +1,28 @@
+baseURL = "https://blog.efitz.net/"
+languageCode = "en-us"
+title = "efitz Blog"
+theme = "minimal"
+enableRobotsTXT = true
+
+[params]
+  description = "Thoughts on technology, security, and whatever else is on my mind."
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    pageRef = "/projects"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[services.rss]
+  limit = 20
