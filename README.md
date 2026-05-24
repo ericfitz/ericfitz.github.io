@@ -12,7 +12,8 @@ Content was originally migrated from efitz.mataroa.blog.
 - `themes/minimal/` — a small, dependency-free theme (layouts + CSS)
 - `hugo.toml` — site configuration
 - `static/CNAME` — custom domain for GitHub Pages
-- `.github/workflows/hugo.yml` — builds and deploys on push to `main`
+- `.github/workflows-template/hugo.yml` — the deploy workflow, staged here until
+  it is activated (see Deployment below)
 
 ## Local development
 
@@ -26,6 +27,17 @@ hugo --gc --minify # production build into ./public
 
 ## Deployment
 
-Pushing to `main` triggers the GitHub Actions workflow, which builds the site
-and publishes it to GitHub Pages. The Pages source must be set to
-**GitHub Actions** (Settings → Pages → Build and deployment → Source).
+The deploy workflow is staged at `.github/workflows-template/hugo.yml` because
+it could not be pushed into `.github/workflows/` from the environment that
+created it (that requires the `workflow` OAuth scope). To activate it, run from
+a machine whose credentials have that scope (or move it via the GitHub web UI):
+
+```sh
+git mv .github/workflows-template/hugo.yml .github/workflows/hugo.yml
+git commit -m "Activate Hugo Pages workflow"
+git push
+```
+
+Once active, pushing to `main` builds the site and publishes it to GitHub Pages.
+The Pages source must also be set to **GitHub Actions**
+(Settings → Pages → Build and deployment → Source).
