@@ -1,0 +1,6 @@
+<footer class="site-footer">
+  <p>
+    &copy; {{ now.Year }} {{ site.Title }}
+    {{ with site.Home.OutputFormats.Get "rss" }}&middot; <a href="{{ .Permalink }}">RSS</a>{{ end }}
+  </p>
+</footer>
