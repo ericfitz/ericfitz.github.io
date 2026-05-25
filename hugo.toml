@@ -1,6 +1,6 @@
 baseURL = "https://blog.efitz.net/"
 languageCode = "en-us"
-title = "efitz Blog"
+title = "efitz writings"
 theme = "minimal"
 enableRobotsTXT = true
 enableGitInfo = true
