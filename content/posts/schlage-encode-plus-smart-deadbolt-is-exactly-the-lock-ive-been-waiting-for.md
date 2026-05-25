@@ -1,6 +1,7 @@
 +++
 title = "Schlage Encode Plus smart deadbolt is exactly the lock I've been waiting for"
 date = 2022-04-04
+lastmod = 2022-04-04
 +++
 
 Friday I received my [Schlage Encode Plus](https://www.schlage.com/en/home/smart-locks/encode-plus.html) smart deadbolt lock, and this morning (Sunday) I installed it.

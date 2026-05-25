@@ -60,9 +60,13 @@ h1, h2, h3, h4 { line-height: 1.25; }
   font-variant-numeric: tabular-nums;
 }
 
-article .post-date {
-  display: block;
+.post-meta {
   margin: -8px 0 28px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.post-meta .post-updated {
+  margin-left: 4px;
 }
 
 .intro { margin-bottom: 24px; }

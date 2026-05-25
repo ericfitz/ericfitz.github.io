@@ -1,6 +1,7 @@
 +++
 title = "What does a customer mean whey they say your software is \"noisy\"?"
 date = 2023-08-17
+lastmod = 2023-08-17
 +++
 
 I have worked in/with security software since about 1996.  I have talked to hundreds or thousands of customers/users of security software over the years.  One of the things that I hear people say frequently about security software is that it's "noisy".   This observation is usually targeted at time series output like logs and so forth.

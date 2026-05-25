@@ -1,6 +1,7 @@
 +++
 title = "AI and the Coming White-Collar Crunch"
 date = 2025-12-26
+lastmod = 2025-12-26
 tags = ["AI"]
 +++
 

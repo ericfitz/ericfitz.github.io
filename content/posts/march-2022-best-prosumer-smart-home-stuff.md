@@ -1,6 +1,7 @@
 +++
 title = "March 2022 Best Prosumer Smart Home Stuff"
 date = 2022-04-04
+lastmod = 2022-04-04
 +++
 
 Here's my current list:

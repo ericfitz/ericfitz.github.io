@@ -1,6 +1,7 @@
 +++
 title = "What if there were a cryptocurrency that supported disputes?"
 date = 2023-01-14
+lastmod = 2023-01-14
 +++
 
 I'm just jotting down a random idea here; maybe it's not fully formed yet.

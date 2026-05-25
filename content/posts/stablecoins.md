@@ -1,6 +1,7 @@
 +++
 title = "Stablecoins"
 date = 2025-01-04
+lastmod = 2025-01-04
 +++
 
 I'm not bullish on cryptocurrency; in particular I've always thought that the proof-of-work infrastructure for mining and transaction clearing (Bitcoin and Ethereum) was too energy-wasteful and too slow to make it useful for commerce.  Ethereum seems to have solved the energy problem by means of switching to proof-of-stake and somehow they've greatly improved the transaction speed problem, but I don't know how and am wary.  It also seems crazy dangerous to distribute immutable programs on a blockchain.  And most other tokens and NFTs seem like scams.

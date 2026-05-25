@@ -1,6 +1,7 @@
 +++
 title = "Icon Activism"
 date = 2022-06-20
+lastmod = 2022-06-20
 +++
 
 Hey app developers, I appreciate that you are people with hopes and dreams and passions.  However, the home screen on my phone is not an appropriate place for you to express your politics.

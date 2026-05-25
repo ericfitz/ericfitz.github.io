@@ -1,6 +1,7 @@
 +++
 title = "My experience creating software with LLM coding agents - Part 1 (Selecting Tools)"
 date = 2025-08-21
+lastmod = 2025-08-21
 tags = ["AI", "development"]
 +++
 

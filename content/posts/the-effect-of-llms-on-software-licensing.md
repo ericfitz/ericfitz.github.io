@@ -1,6 +1,7 @@
 +++
 title = "The effect of LLMs on software licensing"
 date = 2025-08-25
+lastmod = 2025-08-25
 tags = ["AI"]
 +++
 

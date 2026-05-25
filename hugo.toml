@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "efitz Blog"
 theme = "minimal"
 enableRobotsTXT = true
+enableGitInfo = true
 
 [params]
   description = "Thoughts on technology, security, and whatever else is on my mind."
@@ -26,3 +27,8 @@ enableRobotsTXT = true
 
 [services.rss]
   limit = 20
+
+# An explicit `lastmod` in front matter wins (used to pin migrated posts);
+# otherwise the last git commit date is used automatically, then the publish date.
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date"]

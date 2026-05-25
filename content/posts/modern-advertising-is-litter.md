@@ -1,6 +1,7 @@
 +++
 title = "Modern advertising is litter"
 date = 2025-07-30
+lastmod = 2025-07-30
 +++
 
 If you've ever walked down the strip in Las Vegas, you'll encounter something strange - there will be people standing on the sidewalk trying to put business-card size ads in your hands, with pictures of beautiful women on them and phone numbers.  (It's exactly what you think it is, and I seriously doubt the pictures are real).

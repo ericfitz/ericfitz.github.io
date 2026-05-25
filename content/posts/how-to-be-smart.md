@@ -1,6 +1,7 @@
 +++
 title = "How to be Smart"
 date = 2025-12-03
+lastmod = 2025-12-03
 tags = ["self-improvement"]
 +++
 

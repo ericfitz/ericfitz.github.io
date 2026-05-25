@@ -1,6 +1,7 @@
 +++
 title = "Crime and Punishment - what is punishment for?"
 date = 2025-04-23
+lastmod = 2025-04-23
 +++
 
 Throughout my life I've seen a lot of opinions about prison sentence length, fines, whether we should have the death penalty, what is cruel and unusual punishment, etc.  In the 90's, for example, we had "tough on crime" laws, mandatory minimum sentences, "three strikes" laws, etc.  Things always come full circle so it was no surprise (to me at least) that in the 2010s we saw "bail reform" and other things like that.
